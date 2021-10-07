@@ -126,7 +126,7 @@ def diameter(Points):
 pts = ca_coordinates
 hull = ConvexHull(pts)
 fig = plt.figure()
-#ax = fig.add_subplot(111, projection="3d")
+ax = fig.add_subplot(111, projection="3d")
 
 
 
