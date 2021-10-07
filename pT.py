@@ -135,9 +135,9 @@ ax = fig.add_subplot(111, projection="3d")
 #ax.plot(pts.T[0], pts.T[1], pts.T[2], "ko")
 
 # 12 = 2 * 6 faces are the simplices (2 simplices per square face)
-for s in hull.simplices:
+'''for s in hull.simplices:
     s = np.append(s, s[0])  # Here we cycle back to the first coordinate
-    #ax.plot(pts[s, 0], pts[s, 1], pts[s, 2], "r-")
+    ax.plot(pts[s, 0], pts[s, 1], pts[s, 2], "r-")'''
 
 # Make axis label
 for i in ["x", "y", "z"]:
