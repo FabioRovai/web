@@ -179,7 +179,7 @@ try:
 except TypeError:
   print('max width cannot be calculates, 0 value assigned')
 else:
-  return max_width
+  print()
 
 #@title  Calculate Volume of Convex Hull, Farthest Distance using Rotating Calipers and Centroid and Calculate number of positive and negative points on each axis. 
 
