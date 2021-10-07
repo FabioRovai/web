@@ -31,11 +31,10 @@ warnings.filterwarnings("ignore")
 
 pdb=pd.read_csv ('PDB.txt', delim_whitespace=True, header=0).sort_values(by=['resolution'])
 
-#full_protein_ID_foo ="1QOWB"#@param {type:"string"} 
-ID = '3X2MA'
-! python Protein_ID.py -full_protein_ID_foo $ID
+full_protein_ID_foo ="1QOWB"#@param {type:"string"} 
 
-full_protein_ID=re.sub(r"\t", '',args.full_protein_ID_foo) 
+
+full_protein_ID=re.sub(r"\t", '',full_protein_ID_foo) 
 full_protein_ID=re.sub(r" ", '',full_protein_ID) 
  
 protein_ID = pdb.IDs.loc[pdb.iloc[:,0].str.contains(full_protein_ID)].iloc[0][:-1]
