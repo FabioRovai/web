@@ -132,7 +132,7 @@ fig = plt.figure()
 
 
 # Plot defining corner points
-ax.plot(pts.T[0], pts.T[1], pts.T[2], "ko")
+#ax.plot(pts.T[0], pts.T[1], pts.T[2], "ko")
 
 # 12 = 2 * 6 faces are the simplices (2 simplices per square face)
 for s in hull.simplices:
